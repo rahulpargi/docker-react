@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t rahulpargi/docker-react:latest -f Dockerfile.dev .
